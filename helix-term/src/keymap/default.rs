@@ -104,6 +104,7 @@ pub fn default() -> HashMap<Mode, Keymap> {
             "c" => goto_prev_class,
             "a" => goto_prev_parameter,
             "o" => goto_prev_comment,
+            "/" => goto_prev_comment, // Custom
             "p" => move_prev_paragraph,
             "space" => add_newline_above,
         },
@@ -114,6 +115,7 @@ pub fn default() -> HashMap<Mode, Keymap> {
             "c" => goto_next_class,
             "a" => goto_next_parameter,
             "o" => goto_next_comment,
+            "/" => goto_next_comment, // Custom
             "p" => move_next_paragraph,
             "space" => add_newline_below,
         },
